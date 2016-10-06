@@ -1,0 +1,81 @@
+
+(def a 5)
+
+a + 7 + b + 2
+a some-function 7 some-function b some-function 2
+
+(some-function a 7 b 2)
+(+ a 7 b 2)
+
+(* (sin 5) 2 (+ a 7))
+
+(defn double [a] (* a 2))
+
+(double 5)
+// 10
+
+F#:
+def double a -> a * 2
+
+PHP:
+$double = function ($a) { return $a * 2; };
+
+JS:
+var double = (a) => a * 2;
+
+----------------
+
+def a(x) = x + 5
+def b(x) = x + 3
+
+def c(x, y) = 2 * a(x) + b(y) / 5
+def d(x, y) = c(x, y) * c(y, x)
+
+
+d(x, y) = (2 * (x + 5) + (y + 3) / 5) * (2 * (y + 5) + (x + 3) / 5)
+
+println d(5, 8)
+println d(3, 16)
+println d(-1, 3)
+
+println d(7, 7)
+
+(2 * (7 + 5) + (7 + 3) / 5) * (2 * (7 + 5) + (7 + 3) / 5)
+        12        10
+    24               2
+            48                           48
+
+7 + 5     // 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
